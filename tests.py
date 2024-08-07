@@ -1,10 +1,10 @@
-import pytest
-from main import BooksCollector
-
-
-@pytest.fixture(scope='function')
-def collector():
-    return BooksCollector()
+# import pytest
+# from main import BooksCollector
+#
+#
+# @pytest.fixture(scope='function')
+# def collector():
+#     return BooksCollector()
 
 
 class TestBooksCollector:
