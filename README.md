@@ -1,1 +1,15 @@
 # qa_python
+- test_add_new_book_add_unique_books - проверка наличия добавленных уникальных книг в атрибут books_genre
+- test_add_new_book_add_duplicate_books - проверка неизменности добавленной книги при поптыке добавить дублирующееся название в books_genre
+- test_add_new_book_add_book_incorrect_name_length - проверяет, что при добавлении имени с некорректной длинной вв атрибут books_genre не добавляются элементы
+- test_add_new_book_raises_error - проверяет, что при вызове метода add_new_book с type(name) != 'str' возникает исключение TypeError
+- test_set_book_genre_set_existing_genre - проверка назначения книге доступного жанра
+- test_set_book_genre_set_not_existing_genre - проверяет, что существующей книге нельзя добавить/изменить недоступный жанр
+- test_get_book_genre_name_exists - проверяет, что вернулся жанр существующей книги
+- test_get_book_genre_name_not_exists - проверяет, что при вызове get_book_genre с несуществующим именем возвращается None
+- test_get_books_with_specific_genre_returns_books_when_genre_is_valid - проверяет, что книге можно назначить жанр, входящий в атрибут genre
+- test_get_books_genre_returns_books_genre - проверяет, что результат метода get_books_genre эквивалентен атрибуту books_genre
+- test_get_books_for_children_return_book_in_age_rating - проверяет, что результат метода get_books_for_children возвращает книги с жанром не входящим в атрибут genre_age_rating
+- test_add_book_in_favorites_add_unique_books - проверяет, что в список избранных добавляются уникальные книги
+- test_delete_book_from_favorites_delete_one_book - проверяет, что из списка избранных удаляется книга
+- test_get_list_of_favorites_books_return_favorites_books - проверяет что результат метода эквивалентен атрибуту favorites
